@@ -20,6 +20,9 @@ export const Button = styled.button`
   font-size: 1.3rem;
   cursor: pointer;
   &:hover {
-    transform: scale(1.1);
+    background-color: #ff914d;
+  }
+  &:active {
+    transform: translateY(2px);
   }
 `
