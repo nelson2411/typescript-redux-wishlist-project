@@ -1,0 +1,254 @@
+{
+  "videogames": [
+    {
+      "id": 1,
+      "name": "Iron Marines",
+      "year": 2017,
+      "genre": "Real Time Strategy",
+      "publisher": "Iron Hide Games",
+      "platforms": ["Android", "iOS", "PC", "Mac", "Linux"],
+      "image": "https://i.ibb.co/hVPnsXK/iron-marines.png",
+      "price": 3
+    },
+    {
+      "id": 2,
+      "name": "Kingdom Rush",
+      "year": 2011,
+      "genre": "Fantasy Tower Defense",
+      "publisher": "Iron Hide Games",
+      "platforms": ["Android", "iOS", "PC", "Mac", "Linux"],
+      "image": "https://i.ibb.co/mJ8FK88/kingdom-rush.png",
+      "price": 1.99
+    },
+    {
+      "id": 3,
+      "name": "Warcraft III: Reign of Chaos",
+      "year": 2003,
+      "genre": "Fantasy Real Time Strategy",
+      "publisher": "Blizzard Entertainment",
+      "platforms": ["PC"],
+      "image": "https://i.ibb.co/ynf4xrP/warcraft-III.png",
+      "price": 12.98
+    },
+    {
+      "id": 4,
+      "name": "Diablo II",
+      "year": 2000,
+      "genre": "Fantasy Action Role-Playing",
+      "publisher": "Blizzard Entertainment",
+      "platforms": ["PC"],
+      "image": "https://i.ibb.co/5jK4ygs/diablo-II.png",
+      "price": 12.98
+    },
+    {
+      "id": 5,
+      "name": "StarCraft",
+      "year": 1998,
+      "genre": "Science Fiction Real Time Strategy",
+      "publisher": "Blizzard Entertainment",
+      "platforms": ["PC"],
+      "image": "https://i.ibb.co/Rhf0DDb/starcraft.png",
+      "price": 11.99
+    },
+    {
+      "id": 6,
+      "name": "Super Smash Bros",
+      "year": 1999,
+      "genre": "Fighting",
+      "publisher": "Nintendo",
+      "platforms": ["Nintendo 64", "GameCube", "Wii", "Wii U", "Nintendo Switch"],
+      "image": "https://i.ibb.co/wSTkr89/super-smash-bros.png",
+      "price": 5.99
+    },
+    {
+      "id": 7,
+      "name": "Super Mario 64",
+      "year": 1996,
+      "genre": "Platform",
+      "publisher": "Nintendo",
+      "platforms": ["Nintendo 64"],
+      "image": "https://i.ibb.co/fxpd1VS/mario-64.png",
+      "price": 5.99
+    },
+    {
+      "id": 8,
+      "name": "The Legend of Zelda: A Link to the Past",
+      "year": 1992,
+      "genre": "Action-Adventure",
+      "publisher": "Nintendo",
+      "platforms": ["SNES"],
+      "image": "https://i.ibb.co/Wzy1cfg/link-to-the-past.png",
+      "price": 3.99
+    },
+    {
+      "id": 9,
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "year": 1998,
+      "genre": "Action-Adventure",
+      "publisher": "Nintendo",
+      "platforms": ["Nintendo 64"],
+      "image": "https://i.ibb.co/7p3hLgW/ocarina-of-time.png",
+      "price": 5.99
+    },
+    {
+      "id": 10,
+      "name": "Ogre Battle 64: Person of Lordly Caliber",
+      "year": 1999,
+      "genre": "Strategy Role-Playing",
+      "publisher": "Nintendo",
+      "platforms": ["Nintendo 64"],
+      "image": "https://i.ibb.co/0cBt7cb/ogre-battle.png",
+      "price": 3.99
+    },
+    {
+      "id": 11,
+      "name": "Killer Instinct",
+      "year": 1994,
+      "genre": "Fighting",
+      "publisher": "Rare",
+      "platforms": ["SNES"],
+      "image": "https://i.ibb.co/LxcMGV3/killer-instinct.png",
+      "price": 3.99
+    },
+    {
+      "id": 12,
+      "name": "NBA Jam",
+      "year": 1993,
+      "genre": "Sports",
+      "publisher": "Midway Games",
+      "platforms": ["SNES"],
+      "image": "https://i.ibb.co/C6KDc4y/nba-jam.png",
+      "price": 3.99
+    },
+    {
+      "id": 13,
+      "name": "Street Fighter II",
+      "year": 1991,
+      "genre": "Fighting",
+      "publisher": "Capcom",
+      "platforms": ["Arcade", "SNES"],
+      "image": "https://i.ibb.co/Jjk3k67/street-fighter-II.png",
+      "price": 3.99
+    },
+    {
+      "id": 14,
+      "name": "Mortal Kombat",
+      "year": 1992,
+      "genre": "Fighting",
+      "publisher": "Midway Games",
+      "platforms": ["Arcade", "SNES"],
+      "image": "https://i.ibb.co/93m43XR/mortal-kombat-I.png",
+      "price": 3.99
+    },
+    {
+      "id": 15,
+      "name": "Contra",
+      "year": 1987,
+      "genre": "Run and Gun",
+      "publisher": "Konami",
+      "platforms": ["Arcade", "NES"],
+      "image": "https://i.ibb.co/rynvgCt/contra-1.png",
+      "price": 2.99
+    },
+    {
+      "id": 16,
+      "name": "Castlevania",
+      "year": 1986,
+      "genre": "Action-Adventure",
+      "publisher": "Konami",
+      "platforms": ["Arcade", "NES"],
+      "image": "https://i.ibb.co/yYxLwrZ/castlevania-1.png",
+      "price": 2.99
+    },
+    {
+      "id": 17,
+      "name": "Marvel Super Heroes",
+      "year": 1995,
+      "genre": "Fighting",
+      "publisher": "Capcom",
+      "platforms": ["Arcade", "SNES"],
+      "image": "https://i.ibb.co/0nTHqsm/marvel-super-heroes.png",
+      "price": 4.99
+    },
+    {
+      "id": 18,
+      "name": "Devil May Cry",
+      "year": 2001,
+      "genre": "Action-Adventure",
+      "publisher": "Capcom",
+      "platforms": ["PS2"],
+      "image": "https://i.ibb.co/xSwmFsn/devil-may-cry.png",
+      "price": 4.99
+    },
+    {
+      "id": 19,
+      "name": "Devil May Cry 2",
+      "year": 2003,
+      "genre": "Action-Adventure",
+      "publisher": "Capcom",
+      "platforms": ["PS2"],
+      "image": "https://i.ibb.co/nCjBXM0/devil-may-cry-2.png",
+      "price": 4.99
+    },
+    {
+      "id": 20,
+      "name": "Resident Evil",
+      "year": 1996,
+      "genre": "Survival Horror",
+      "publisher": "Capcom",
+      "platforms": ["PS1"],
+      "image": "https://i.ibb.co/0ZjnQVm/resident-evil.png",
+      "price": 3.99
+    },
+    {
+      "id": 21,
+      "name": "Resident Evil 2",
+      "year": 1998,
+      "genre": "Survival Horror",
+      "publisher": "Capcom",
+      "platforms": ["PS1"],
+      "image": "https://i.ibb.co/8cPJ6SL/resident-evil-2.png",
+      "price": 3.99
+    },
+    {
+      "id": 22,
+      "name": "Megaman",
+      "year": 1987,
+      "genre": "Action-Platformer",
+      "publisher": "Capcom",
+      "platforms": ["NES"],
+      "image": "https://i.ibb.co/qrKRwSC/megaman-1.png",
+      "price": 3.99
+    },
+    {
+      "id": 23,
+      "name": "Megaman 2",
+      "year": 1988,
+      "genre": "Action-Platformer",
+      "publisher": "Capcom",
+      "platforms": ["NES"],
+      "image": "https://i.ibb.co/ThnrwM5/megaman-2.png",
+      "price": 3.99
+    },
+    {
+      "id": 24,
+      "name": "Megaman 3",
+      "year": 1989,
+      "genre": "Action-Platformer",
+      "publisher": "Capcom",
+      "platforms": ["NES"],
+      "image": "https://i.ibb.co/8MsBb3z/megaman-3.png",
+      "price": 3.99
+    },
+    {
+      "id": 25,
+      "name": "Megaman x",
+      "year": 1993,
+      "genre": "Action-Platformer",
+      "publisher": "Capcom",
+      "platforms": ["SNES"],
+      "image": "https://i.ibb.co/0qPZKVZ/megaman-x.png",
+      "price": 3.99
+    }
+  ]
+}

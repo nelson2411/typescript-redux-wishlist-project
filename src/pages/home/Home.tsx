@@ -1,8 +1,8 @@
-import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
-import Container from 'react-bootstrap/Container'
-import { AiOutlineCloseCircle, AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
-import { HomeContainer, BoxContainer, HomeIcons, HomeText } from './Home.styles'
+import React from 'react';
+import NavBar from '../../components/NavBar/NavBar';
+import Container from 'react-bootstrap/Container';
+import { AiOutlineCloseCircle, AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
+import { HomeContainer, BoxContainer, HomeIcons, HomeText } from './Home.styles';
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
       </HomeContainer>
       <NavBar />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

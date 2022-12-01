@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Container } from 'react-bootstrap'
+import styled from 'styled-components';
+import { Container } from 'react-bootstrap';
 
 export const HomeContainer = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ export const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   /* box-shadow with no blur */
-`
+`;
 export const BoxContainer = styled(Container)`
   /* create a 1px black border, only bottom border  */
   border: 3px solid black;
@@ -19,14 +19,14 @@ export const BoxContainer = styled(Container)`
   @media (max-width: 768px) {
     width: 80%;
   }
-`
+`;
 
 export const HomeIcons = styled.div`
   border-bottom: 3px solid black;
   padding: 10px;
-`
+`;
 
 export const HomeText = styled.div`
   padding: 10px;
   text-align: center;
-`
+`;

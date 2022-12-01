@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button, NavBarContainer } from './NavBar.styles'
+import React from 'react';
+import { Button, NavBarContainer } from './NavBar.styles';
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
       <Button>Products</Button>
       <Button>Wishlist ❤</Button>
     </NavBarContainer>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
