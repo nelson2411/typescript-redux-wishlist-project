@@ -5,11 +5,15 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <NavBarContainer>
-      <Button>About Me</Button>
+      <Link to='/about'>
+        <Button>About Me</Button>
+      </Link>
       <Link to='/products'>
         <Button>Products</Button>
       </Link>
-      <Button>Wishlist ❤</Button>
+      <Link to='/cart'>
+        <Button>Wishlist ❤</Button>
+      </Link>
     </NavBarContainer>
   );
 };

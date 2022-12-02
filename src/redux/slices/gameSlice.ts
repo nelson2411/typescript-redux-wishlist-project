@@ -19,8 +19,12 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    // Items can be only added once to the cart
     addToCart: (state, action: PayloadAction<VideoGame>) => {
-      state.cart.push(action.payload);
+      const item = state.cart.find((item) => item.id === action.payload.id);
+      if (!item) {
+        state.cart.push(action.payload);
+      }
     },
     removeFromCart: (state, action: PayloadAction<VideoGame>) => {
       state.cart = state.cart.filter((game) => game.id !== action.payload.id);

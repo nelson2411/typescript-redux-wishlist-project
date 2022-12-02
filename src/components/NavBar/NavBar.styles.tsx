@@ -18,7 +18,7 @@ export const Button = styled.button`
   border: 3px solid black;
   border-radius: 5px;
   padding: 15px 40px;
-  width: 200px;
+  width: 220px;
   /* background color must be transparent */
   background-color: transparent;
   box-shadow: 7px 8px 1px -2px black;

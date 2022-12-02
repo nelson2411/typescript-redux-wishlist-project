@@ -31,12 +31,13 @@ export const ListGroupItemContainer = styled(ListGroup.Item)`
 `;
 
 export const CardButton = styled.button`
+
 border: 3px solid black;
   border-radius: 5px;
   padding: 5px 10px;
   width: 200px;
   /* background color must be transparent */
-  background-color: transparent;
+  background-color: ${(props) => (props.className === 'in-cart' ? 'green' : 'transparent')};
   box-shadow: 7px 8px 1px -2px black;
   margin: 10px 5px;
   font-size: 1.3rem;
@@ -46,5 +47,7 @@ border: 3px solid black;
   }
   &:active {
     transform: translateY(2px);
+
+    
 
 `;
