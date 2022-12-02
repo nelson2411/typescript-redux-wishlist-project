@@ -8,6 +8,7 @@ import {
   CardBodyButtonContainer,
   CardButton,
 } from './Card.styles';
+import { Link } from 'react-router-dom';
 import { VideoGame } from '../../types/videoGamesTypes';
 
 type ProductCardProps = {
@@ -29,7 +30,9 @@ function ProductCard({ product }: ProductCardProps) {
       </ListGroupContainer>
       <CardBodyButtonContainer>
         <CardButton>Add to Wishlist</CardButton>
-        <CardButton>More Info</CardButton>
+        <Link to={`/product/${product.id}`}>
+          <CardButton>More Info</CardButton>
+        </Link>
       </CardBodyButtonContainer>
     </CardContainer>
   );
