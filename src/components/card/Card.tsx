@@ -22,9 +22,6 @@ function ProductCard({ product }: ProductCardProps) {
   const [buttonText, setButtonText] = React.useState('Add to Wishlist');
   // Change button className based on whether the product is in the cart or not
   const [buttonClassName, setButtonClassName] = React.useState('not-in-cart');
-  // Button must be disabled if the product is in the cart
-  const [buttonDisabled, setButtonDisabled] = React.useState(false);
-
   const cart = useSelector(selectCart);
   const dispatch = useDispatch();
   return (
