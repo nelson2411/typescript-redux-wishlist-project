@@ -1,14 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectCart } from '../../redux/slices/gameSlice';
+import { VideoGame } from '../../types/videoGamesTypes';
+import { selectCart, removeFromCart } from '../../redux/slices/gameSlice';
+import { useDispatch } from 'react-redux';
 import { RootState } from '../../redux/store';
-import { Table, Image, Badge } from 'react-bootstrap';
+import { Table, Image, Badge, Button } from 'react-bootstrap';
 import { CartContainer } from './CartTable.styles';
 import { FcElectronics } from 'react-icons/fc';
 import { FaTrashAlt } from 'react-icons/fa';
 
 const CartTable = () => {
-  const { cart } = useSelector((state: RootState) => state.cart);
+  const dispatch = useDispatch();
+  const cart = useSelector(selectCart);
   return (
     <>
       <Table striped bordered hover>
@@ -31,7 +34,7 @@ const CartTable = () => {
               Ooops, you must add countries to the cart!
             </h3>
           ) : null}
-          {cart.map((item) => (
+          {cart.map((item: VideoGame) => (
             <tr key={item.id}>
               <td className='p-3'>
                 <Image
@@ -54,7 +57,15 @@ const CartTable = () => {
               </td>
               <td>{item.price}</td>
               <td>
-                <FaTrashAlt size={30} />
+                <Button
+                  variant='danger'
+                  className='mx-auto d-flex align-items-center'
+                  onClick={() => {
+                    dispatch(removeFromCart(item));
+                  }}
+                >
+                  <FaTrashAlt size={30} />
+                </Button>
               </td>
             </tr>
           ))}
