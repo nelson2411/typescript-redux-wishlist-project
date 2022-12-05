@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { VideoGame } from '../../types/videoGamesTypes';
 import { selectCart, removeFromCart } from '../../redux/slices/gameSlice';
 import { useDispatch } from 'react-redux';
-import { RootState } from '../../redux/store';
 import { Table, Image, Badge, Button } from 'react-bootstrap';
 import { CartContainer } from './CartTable.styles';
 import { FcElectronics } from 'react-icons/fc';
