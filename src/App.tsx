@@ -4,6 +4,7 @@ import GlobalStyle from './components/global-styles/GlobalStyle';
 import Home from './pages/home/Home';
 import Product from './pages/product/Product';
 import Products from './pages/products/Products';
+import About from './pages/about/About';
 import Cart from './pages/cart/CartPage';
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/cart'>
           <Cart />
         </Route>
+        <Route path='/about' component={About} />
       </Switch>
     </div>
   );

@@ -30,7 +30,7 @@ const CartTable = () => {
           {cart.length === 0 ? (
             <h3>
               <FcElectronics size={70} />
-              Ooops, you must add countries to the cart!
+              Ooops, you must add videogames to the cart!
             </h3>
           ) : null}
           {cart.map((item: VideoGame) => (
