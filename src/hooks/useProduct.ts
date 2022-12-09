@@ -10,7 +10,9 @@ export const useProduct = (id: number) => {
 
   const fetchProduct = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/videogames/${id}`);
+      const response = await axios.get(
+        `https://my-json-server.typicode.com/nelson2411/typescript-redux-wishlist-project/videogames/${id}`,
+      );
       const product = response.data;
       setProduct(product);
       setLoading(false);

@@ -11,7 +11,9 @@ const useProducts = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/videogames');
+      const response = await axios.get(
+        'https://my-json-server.typicode.com/nelson2411/typescript-redux-wishlist-project/videogames/',
+      );
       const products = response.data;
       setProducts(products);
       setLoading(false);
