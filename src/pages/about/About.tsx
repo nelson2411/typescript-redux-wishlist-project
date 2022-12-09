@@ -12,7 +12,7 @@ const About = () => {
       <AppBar />
       <Container>
         <Row>
-          <Col>
+          <Col className='mb-5'>
             <ImageContainer src={image} alt={name} width={500} className='rounded-3' />
           </Col>
           <Col className='d-flex flex-column justify-content-center align-items-center'>

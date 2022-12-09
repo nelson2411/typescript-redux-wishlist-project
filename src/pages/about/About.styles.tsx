@@ -8,9 +8,13 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* box-shadow with no blur */
+  /* responsive design */
 `;
 
 export const ImageContainer = styled(Image)`
   box-shadow: 12px 12px 2px 1px black;
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
 `;
