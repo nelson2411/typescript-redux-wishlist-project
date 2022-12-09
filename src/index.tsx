@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { HelmetProvider } from 'react-helmet-async';
+
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
@@ -17,11 +19,13 @@ const persistor = persistStore(store);
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <Provider store={store}>
-        <PersistGate persistor={persistor} loading={null}>
-          <App />
-        </PersistGate>
-      </Provider>
+      <HelmetProvider>
+        <Provider store={store}>
+          <PersistGate persistor={persistor} loading={null}>
+            <App />
+          </PersistGate>
+        </Provider>
+      </HelmetProvider>
     </React.StrictMode>
   </BrowserRouter>,
 );

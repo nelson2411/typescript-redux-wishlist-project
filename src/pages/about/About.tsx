@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../data/profile';
+import { Helmet } from 'react-helmet-async';
 import AppBar from '../../components/AppBar/AppBar';
 import { HomeContainer, ImageContainer } from './About.styles';
 import { Container, Image, Col, Row, Badge, ListGroup } from 'react-bootstrap';
@@ -9,6 +10,16 @@ const About = () => {
   const { name, image, description } = data;
   return (
     <HomeContainer>
+      <Helmet>
+        <title>About</title>
+        <meta name='description' content='This is the about page' />
+        <meta name='keywords' content='OpenBootcamp, React, Redux, Nodejs, Vercel' />
+        <meta name='author' content='Nelson Rosales' />
+        <meta property='og:title' content='About Me' />
+        <meta property='og:description' content='This is the about page' />
+        <meta property='og:image' content={image} />
+        <meta property='og:url' content='https://typescript-redux-wishlist-project.vercel.app/' />
+      </Helmet>
       <AppBar />
       <Container>
         <Row>
