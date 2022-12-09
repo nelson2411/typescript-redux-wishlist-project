@@ -18,6 +18,8 @@ const About = () => {
         <meta property='og:title' content='About Me' />
         <meta property='og:description' content='This is the about page' />
         <meta property='og:image' content={image} />
+        <meta property='og:image:width' content='600' />
+        <meta property='og:image:height' content='314' />
         <meta property='og:url' content='https://typescript-redux-wishlist-project.vercel.app/' />
       </Helmet>
       <AppBar />

@@ -14,12 +14,13 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
+const helmetContext = {};
 const persistor = persistStore(store);
 
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <HelmetProvider>
+      <HelmetProvider context={helmetContext}>
         <Provider store={store}>
           <PersistGate persistor={persistor} loading={null}>
             <App />

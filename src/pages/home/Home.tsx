@@ -11,13 +11,17 @@ const Home = () => {
     <>
       <Helmet>
         <title>Home Page</title>
+        <link rel='canonical' href='https://typescript-redux-wishlist-project.vercel.app/' />
         <meta name='description' content='This is the about page' />
         <meta name='keywords' content='OpenBootcamp, React, Redux, Nodejs, Vercel' />
         <meta name='author' content='Nelson Rosales' />
+        {/* Facebook meta tags */}
+        <meta property='og:url' content='https://typescript-redux-wishlist-project.vercel.app/' />
         <meta property='og:title' content='wishlist App' />
         <meta property='og:description' content='wishlist app created with ReactJs' />
         <meta property='og:image' content={mainImage} />
-        <meta property='og:url' content='https://typescript-redux-wishlist-project.vercel.app/' />
+        <meta property='og:image:width' content='600' />
+        <meta property='og:image:height' content='314' />
       </Helmet>
       <HomeContainer>
         <BoxContainer>
