@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import mainImage from '../../assets/images/projects-2.jpg';
 import NavBar from '../../components/NavBar/NavBar';
 import Container from 'react-bootstrap/Container';
 import { AiOutlineCloseCircle, AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
@@ -15,7 +16,7 @@ const Home = () => {
         <meta name='author' content='Nelson Rosales' />
         <meta property='og:title' content='wishlist App' />
         <meta property='og:description' content='wishlist app created with ReactJs' />
-        <meta property='og:image' content='https://i.ibb.co/58sJvh0/projects-4.jpg' />
+        <meta property='og:image' content={mainImage} />
         <meta property='og:url' content='https://typescript-redux-wishlist-project.vercel.app/' />
       </Helmet>
       <HomeContainer>
