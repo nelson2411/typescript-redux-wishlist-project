@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+
 import GlobalStyle from './components/global-styles/GlobalStyle';
 import Home from './pages/home/Home';
 import Product from './pages/product/Product';
@@ -13,17 +15,19 @@ function App() {
     <div>
       <GlobalStyle />
       <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='/products' component={Products} />
-        <Route exact path='/product/:id'>
-          <Product />
-        </Route>
-        <Route path='/cart'>
-          <Cart />
-        </Route>
-        <Route path='/about' component={About} />
+        <HelmetProvider>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/products' component={Products} />
+          <Route exact path='/product/:id'>
+            <Product />
+          </Route>
+          <Route path='/cart'>
+            <Cart />
+          </Route>
+          <Route path='/about' component={About} />
+        </HelmetProvider>
       </Switch>
     </div>
   );
