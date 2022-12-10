@@ -9,6 +9,7 @@ import {
   InfoGameContainer,
   BadgeContainer,
   InfoTextContainer,
+  RowContainer,
 } from './ProductInfo.styles';
 import { Container, Row, Col, Image, Card, ListGroup, Badge } from 'react-bootstrap';
 
@@ -22,9 +23,9 @@ const ProductInfo = ({ id }: ProductInfoProps) => {
 
   return (
     <ProductInfoContainer>
-      <Container>
-        <Row>
-          <Col>
+      <Container fluid>
+        <RowContainer>
+          <Col className='d-flex justify-content-center align-items-center mt-5'>
             <ImageContainer src={product?.image} alt={product?.name} fluid />
           </Col>
           <InfoTextContainer>
@@ -33,7 +34,7 @@ const ProductInfo = ({ id }: ProductInfoProps) => {
               <InfoGameContainer>Genre: {product?.genre}</InfoGameContainer>
               <InfoGameContainer>Publisher: {product?.publisher}</InfoGameContainer>
               <InfoGameContainer>Year: {product?.year}</InfoGameContainer>
-              <InfoGameContainer>Price: {product?.price}</InfoGameContainer>
+              <InfoGameContainer>Price: ${product?.price}</InfoGameContainer>
               <PlatformsContainer>
                 Platforms:
                 {product?.platforms.map((platform, index) => (
@@ -46,7 +47,7 @@ const ProductInfo = ({ id }: ProductInfoProps) => {
               </PlatformsContainer>
             </InfoContainer>
           </InfoTextContainer>
-        </Row>
+        </RowContainer>
       </Container>
     </ProductInfoContainer>
   );

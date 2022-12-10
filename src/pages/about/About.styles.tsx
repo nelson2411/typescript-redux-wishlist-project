@@ -14,7 +14,17 @@ export const HomeContainer = styled.div`
 export const ImageContainer = styled(Image)`
   box-shadow: 12px 12px 2px 1px black;
 
-  @media (max-width: 768px) {
-    width: 400px;
+  @media (max-width: 860px) {
+    width: 325px;
+  }
+`;
+
+export const LinkContainer = styled.a`
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    /* increase size when hover */
+    transform: scale(1.1);
   }
 `;

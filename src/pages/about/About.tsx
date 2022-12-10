@@ -11,7 +11,7 @@ const About = () => {
   return (
     <HomeContainer>
       <Helmet>
-        <title>About</title>
+        <title>About Page</title>
         <meta name='description' content='This is the about page' />
         <meta name='keywords' content='OpenBootcamp, React, Redux, Nodejs, Vercel' />
         <meta name='author' content='Nelson Rosales' />
@@ -20,19 +20,26 @@ const About = () => {
         <meta property='og:image' content={image} />
         <meta property='og:image:width' content='600' />
         <meta property='og:image:height' content='314' />
-        <meta property='og:url' content='https://typescript-redux-wishlist-project.vercel.app/' />
+        <meta
+          property='og:url'
+          content='https://typescript-redux-wishlist-project.vercel.app/about'
+        />
       </Helmet>
       <AppBar />
       <Container>
         <Row>
-          <Col className='mb-5'>
+          <Col className='mb-5 mt-5'>
             <ImageContainer src={image} alt={name} width={500} className='rounded-3' />
           </Col>
           <Col className='d-flex flex-column justify-content-center align-items-center'>
             <h1>{name}</h1>
             <span>{description}</span>
             {/* Social icons horizontal list */}
-            <ListGroup horizontal variant='flush' className='mt-5 d-flex justify-content-center'>
+            <ListGroup
+              horizontal
+              variant='flush'
+              className='mt-5 d-flex justify-content-center shadow'
+            >
               <ListGroup.Item>
                 <a
                   href='https://www.linkedin.com/in/nelsonrosales24/'

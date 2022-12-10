@@ -9,4 +9,8 @@ export const CartTableContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+
+  @media (max-width: 860px) {
+    min-width: fit-content;
+  }
 `;
