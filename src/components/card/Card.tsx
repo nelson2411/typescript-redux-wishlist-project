@@ -25,7 +25,7 @@ function ProductCard({ product }: ProductCardProps) {
   const cart = useSelector(selectCart);
   const dispatch = useDispatch();
   return (
-    <CardContainer style={{ width: '18rem' }}>
+    <CardContainer>
       <Card.Img variant='top' src={product.image} />
       <CardBodyContainer>
         <Card.Title>{product.name}</Card.Title>

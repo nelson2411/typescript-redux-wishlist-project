@@ -14,4 +14,11 @@ export const ProductsGrid = styled.div`
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  /* Create a responsive grid with two columns */
+  @media (max-width: 860px) {
+    /* must have two columns */
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
 `;
