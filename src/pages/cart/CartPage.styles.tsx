@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const CartTableContainer = styled(Container)`
   width: 100%;
@@ -13,4 +14,9 @@ export const CartTableContainer = styled(Container)`
   @media (max-width: 860px) {
     min-width: fit-content;
   }
+`;
+
+export const LinkToHome = styled(Link)`
+  margin-right: auto;
+  margin-bottom: 1rem;
 `;

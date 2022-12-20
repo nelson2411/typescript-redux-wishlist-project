@@ -3,7 +3,8 @@ import data from '../../data/profile';
 import { Helmet } from 'react-helmet-async';
 import AppBar from '../../components/AppBar/AppBar';
 import { HomeContainer, ImageContainer } from './About.styles';
-import { Container, Image, Col, Row, Badge, ListGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Container, Image, Col, Row, Badge, ListGroup, Button } from 'react-bootstrap';
 import { FaGithubSquare, FaLinkedin, FaStackOverflow, FaTwitterSquare } from 'react-icons/fa';
 
 const About = () => {
@@ -28,6 +29,11 @@ const About = () => {
       <AppBar />
       <Container>
         <Row>
+          <Link to='/' className='mr-auto'>
+            <Button variant='warning' className='shadow'>
+              Go Back!
+            </Button>
+          </Link>
           <Col className='mb-5 mt-5'>
             <ImageContainer src={image} alt={name} width={500} className='rounded-3' />
           </Col>

@@ -47,7 +47,7 @@ const CartTable = () => {
             <td>{item.genre}</td>
             <td>{item.publisher}</td>
             <td>
-              {item.platforms.map((platform, index) => (
+              {item.platforms?.map((platform, index) => (
                 <Badge key={index} bg='secondary' className='my-1 mx-2 px-3 py-2'>
                   <h6>{platform}</h6>
                 </Badge>
